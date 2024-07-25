@@ -1,0 +1,11 @@
+.storybook
+/node_modules
+/src
+storybook-static
+tsconfig.json
+.eslintrc.cjs
+.eslintignore
+.prettier*
+.npmrc
+postcss.config.cjs
+tailwind.config.*
