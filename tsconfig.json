@@ -4,7 +4,6 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "outDir": "dist",
-    "jsx": "react-jsx",
     "declaration": true,
     "types": ["vue"],
     "lib": ["ES2022", "DOM"],
@@ -13,17 +12,9 @@
     "strict": true,
     "skipLibCheck": true,
     "baseUrl": ".",
+    "noUncheckedIndexedAccess": true,
     "paths": {}
   },
-  "exclude": [
-    "node_modules",
-    "src/**/*.test.ts",
-    "src/**/*.test.tsx",
-    "src/**/*.stories.ts",
-    "src/**/*.stories.tsx",
-    "src/**/**/*.stories.ts",
-    "src/**/**/*.stories.tsx",
-    "src/**/__tests__"
-  ],
+  "exclude": ["node_modules", "src/**/*.test.ts", "src/**/*.test.tsx"],
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
