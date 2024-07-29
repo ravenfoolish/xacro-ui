@@ -9,3 +9,9 @@ tsconfig.json
 .npmrc
 postcss.config.cjs
 tailwind.config.*
+vite.config.ts
+tsconfig.eslint.json
+.vscode
+env.d.ts
+index.html
+postcss.config.js
