@@ -17,7 +17,7 @@ module.exports = {
     extraFileExtensions: ['.vue']
   },
   globals: {},
-  plugins: ['@typescript-eslint', 'vue', 'prefer-arrow-functions', 'functional', 'total-functions'],
+  plugins: ['@typescript-eslint', 'vue', 'prefer-arrow-functions', 'functional'],
   ignorePatterns: ['dist', 'node_modules', 'src/**/*.test.ts', 'src/**/*.test.tsx'],
   extends: [
     'eslint:recommended',
@@ -25,8 +25,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:vue/vue3-essential',
     '@vue/eslint-config-prettier/skip-formatting',
-    'plugin:storybook/recommended',
-    'plugin:total-functions/recommended'
+    'plugin:storybook/recommended'
   ],
   rules: {
     'no-implicit-coercion': 'error',
@@ -36,7 +35,6 @@ module.exports = {
       { name: 'isFinite', message: 'Use Number.isFinite instead.' },
       { name: 'isNaN', message: 'Use Number.isNaN instead.' }
     ],
-    'total-functions/no-unsafe-type-assertion': 'error',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/strict-boolean-expressions': [
       'warn',

@@ -1,15 +1,12 @@
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { defineProps, defineEmits, computed } from 'vue'
 import '../../styles/style.css'
 
-const props = withDefaults(
-  defineProps<{
-    label: String
-    primary?: boolean
-    backgroundColor?: string
-  }>(),
-  { primary: false }
-)
+const props = defineProps<{
+  label: string
+  primary?: boolean
+  backgroundColor?: string
+}>()
 
 const emit = defineEmits<{
   (e: 'click', id: number): void
@@ -32,5 +29,5 @@ const onClick = () => {
 </script>
 
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <button type="button" :class="classes" @click="onClick" :style="style">{{ props.label }}</button>
 </template>
